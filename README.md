@@ -1,4 +1,4 @@
-An example app demonstrating Game Center GKMatch GKSendDataReliable packets lost. See [StackOverflow question][SO].
+An example app demonstrating Game Center GKMatch GKSendDataReliable packets lost. See [StackOverflow question][SO]. A workaround for this bug is a [RoUTP][RoUTP] project.
 
 ## Steps to reproduce the bug
 
@@ -22,3 +22,4 @@ An example app demonstrating Game Center GKMatch GKSendDataReliable packets lost
 [SACK]: http://en.wikipedia.org/wiki/Retransmission_(data_networks)
 [packetloss]: PacketLoss.png
 [stopReceiving]: StopReceiving.png
+[RoUTP]: https://github.com/rabovik/RoUTP
