@@ -216,10 +216,10 @@
         [self logError:@"JSON encoding error."];
         return;
     }
-    [self.myMatch sendDataToAllPlayers:data
-                          withDataMode:GKMatchSendDataReliable
-                                 error:&error];
-	if (error != nil){
+    BOOL result = [self.myMatch sendDataToAllPlayers:data
+                                        withDataMode:GKMatchSendDataReliable
+                                               error:&error];
+	if (error != nil || !result){
         [self stopSending];
         [self logError:@"sendDataToAllPlayers error"];
         return;
